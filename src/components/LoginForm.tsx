@@ -59,7 +59,7 @@ export default function LoginForm({ onLoginSuccess }: LoginFormProps) {
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="mt-1 block w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             placeholder="Enter username (admin or public)"
             disabled={isLoading}
           />
@@ -74,7 +74,7 @@ export default function LoginForm({ onLoginSuccess }: LoginFormProps) {
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="mt-1 block w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="mt-1 block w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
             placeholder="Enter password"
             disabled={isLoading}
           />
@@ -98,7 +98,7 @@ export default function LoginForm({ onLoginSuccess }: LoginFormProps) {
       <div className="mt-4 text-center text-sm text-gray-500">
         <p>Test credentials:</p>
         <p>Username: admin or public</p>
-        <p>Password: password</p>
+        <p>Password: ENV KEY</p>
       </div>
     </div>
   );
